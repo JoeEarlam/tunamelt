@@ -6,20 +6,19 @@
 #define SPEED_LO 100
 #define SPEED_HI 140
 #define ACCEL_DIST 19
-#define ESC_COUNT 2
 #define HEADING_ANGLE 45
 #define LED_BRIGHTNESS 255
-#define TRANSLATE_STEPS 32
 #define VBATT_R1 47000
 #define VBATT_R2 4700
 #define LOW_BATT_MVOLTS 6000
+#define TRANSLATE_STEPS 32
 
 #define PIN_HEADING 3
 #define PIN_VBATT 29
 #define PIN_ESC0 0
 #define PIN_ESC1 2
-#define PIN_RGB_EN 11
-#define PIN_RGB_DAT 12
+#define PIN_RGB_EN 11 //internal to seeed xiao
+#define PIN_RGB_DAT 12 //internal to seeed xiao
 
 struct Radio_t {
   int16_t steering = 0;

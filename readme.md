@@ -32,6 +32,21 @@ https://github.com/adafruit/Adafruit_LIS331
 https://github.com/bastian2001/pico-bidir-dshot
 https://github.com/adafruit/Adafruit_NeoPixel
 
+# Configuration
+
+The file "melty.h" contains various configuration options. These are as follows:
+
+SPEED_LO: Low speed mode duty cycle (/255). Lower spin speeds offer higher translation speeds at the expense of kinetic energy.
+SPEED_HI: High speed mode duty cycle.
+ACCEL_DIST: Accelerometer distance from centre of rotation in millimetres.
+HEADING_ANGLE: Number of degrees to display the heading LED for.
+LED_BRIGHTNESS: LED duty cycle (/255). Turn down to avoid burning out heading LEDs when run without a resistor.
+VBATT_R1: High side divider resistance in ohms
+VBATT_R2: Low side resistance in ohms
+LOW_BATT_MVOLTS: Low battery value in millivolts. Usually 3V/cell for lipo batteries.
+
+Additionally, pin assignments can be set here.
+
 # Theory of Operation
 
 * The serial buffer is polled for a new radio packet every task scheduler loop. If one is received, it is parsed into control inputs. If one is not received for over 100ms the code enters failsafe state and the motor outputs are disabled.
@@ -39,6 +54,14 @@ https://github.com/adafruit/Adafruit_NeoPixel
 * When a valid radio packet is parsed, the main logic task is triggered. This function handles switching between tank drive and forward/reverse meltybrain modes, as well as accelerometer trim and battery status.
 * In meltybrain mode the RPM calculated from the accelerometer readings is used to time the interval between each iteration of the meltybrain task. The interval calculatd in the main meltybrain task is used to schedule the heading LED and translation tasks, as well as the next iteration of the main meltybrain task. The steering input from the radio adds or subtracts a small amount of time to this interval, which gives the appearance of the heading LED turning as the steering wheel/stick is moved.
 * Motor duty cycles are calculated 32 times per rotation of the robot. A sinusoidal function mapped across one rotation of the robot is used to calculate the motor duty cycles, with both wheels spinning at the baseline spin speed of the robot when perpendicular to the direction of travel, and at their maximum/minimum (the magnitude of the max/mins is based on the throttle input) when parallel to the direction of travel.
+
+# RGB LED
+
+As well as cool rainbows to make the robot go faster, the RGB LED is used to indicate status as follows:
+
+Rainbow: OK
+Blue: Receiver failsafe
+Red: Battery low voltage
 
 # Minor Bugs/Future Improvements
 
