@@ -26,7 +26,7 @@ void rgbCB();
 Scheduler ts0;
 
 Task readRadio(0, TASK_FOREVER, &readRadioCB, &ts0);
-Task readAccel(1000, TASK_FOREVER, &readAccelCB, &ts0);
+Task readAccel(10000, TASK_FOREVER, &readAccelCB, &ts0);
 Task mainTask(0, TASK_ONCE, &mainTaskCB, &ts0);
 Task rgb(1000, TASK_FOREVER, &rgbCB, &ts0);
 
