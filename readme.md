@@ -73,6 +73,7 @@ As well as cool rainbows to make the robot go faster, the RGB LED is used to ind
 # Other Information
 
 Default radio channels:
+
 1: Steering
 
 2: Throttle (forwards/backwards)
