@@ -2,7 +2,7 @@
 
 Tunamelt* is a minimalist meltybrain combat robot firmware. Unlike existing loop-based implementations, it uses an asynchronous architecture based on arkhipenko's TaskScheduler library (https://github.com/arkhipenko/TaskScheduler) to handle precise timing across two cores of an RP2040 microcontroller while remaining configurable and extensible. In addition, it uses sinusoidal trigonometric functions to provide smooth, proportional translation.
 
-An example video can be seen here: https://www.youtube.com/watch?v=Yd3VEgTqDbg
+An example video can be seen here: https://www.youtube.com/watch?v=XTJDeWW9sEk
 
 *"Every day for the last three weeks you've been coming in here and you've been asking me how the tuna is. Now, it was crappy yesterday, it was crappy the day before and guess what? It hasn't changed." - Mia Toretto, The Fast and the Furious
 
@@ -10,7 +10,7 @@ An example video can be seen here: https://www.youtube.com/watch?v=Yd3VEgTqDbg
 
 ## Hardware
 
-The proof of concept robot "The Room-ba" uses the following hardware:
+The proof of concept robot "The Room-ba" (https://forum.bristolbotbuilders.com/t/irregularantweights/801/31) uses the following hardware:
 
 * Seeed Xiao RP2040
 * H3LIS331DL accelerometer
