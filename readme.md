@@ -12,12 +12,14 @@ An example video can be seen here: https://www.youtube.com/watch?v=Yd3VEgTqDbg
 
 The proof of concept robot "The Room-ba" uses the following hardware:
 
-Seeed Xiao RP2040
-H3LIS331DL accelerometer
-FlySky FS-A8S receiver
-2x Emax Bullet 12A ESCs (flashed with Bluejay firwmare - this is not required but I found it to perform better)
-2x generic silver can 1104 motors
-2s 300mAh lipo
+* Seeed Xiao RP2040
+* H3LIS331DL accelerometer
+* FlySky FS-A8S receiver
+* 2x Emax Bullet 12A ESCs (flashed with Bluejay firwmare - this is not required but I found it to perform better)
+* 2x generic silver can 1104 motors
+* 2s 300mAh lipo
+
+Any FlySky iBus compatible receiver and dshot compatible ESCs should be compatible as-is.
 
 A custom PCB is not required but is highly recommended for actual combat due to reliability issues with point to point soldering.
 
