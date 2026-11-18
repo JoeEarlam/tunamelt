@@ -29,10 +29,10 @@ This software was written using the Arduino-Pico RP2040 core: https://github.com
 
 following libraries (and their dependencies) were used:
 
-https://github.com/arkhipenko/TaskScheduler
-https://github.com/adafruit/Adafruit_LIS331
-https://github.com/bastian2001/pico-bidir-dshot
-https://github.com/adafruit/Adafruit_NeoPixel
+* https://github.com/arkhipenko/TaskScheduler
+* https://github.com/adafruit/Adafruit_LIS331
+* https://github.com/bastian2001/pico-bidir-dshot
+* https://github.com/adafruit/Adafruit_NeoPixel
 
 # Configuration
 
