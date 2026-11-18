@@ -59,9 +59,9 @@ Additionally, pin assignments can be set here.
 
 As well as cool rainbows to make the robot go faster, the RGB LED is used to indicate status as follows:
 
-Rainbow: OK
-Blue: Receiver failsafe
-Red: Battery low voltage
+* Rainbow: OK
+* Blue: Receiver failsafe
+* Red: Battery low voltage
 
 # Minor Bugs/Future Improvements
 
@@ -74,10 +74,15 @@ Red: Battery low voltage
 
 Default radio channels:
 1: Steering
+
 2: Throttle (forwards/backwards)
+
 3: Speed (3 positions, switch or potentiometer)
+
 4: N/A
+
 5: Accelerometer trim (Trim switch and/or potentiometer)
+
 6: Spin direction (2 position switch)
 
 While I use a programmable EdgeTX transmitter, these should be compatible with common non-programmable transmitters like the FlySky FS-i6.
