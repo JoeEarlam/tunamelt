@@ -36,14 +36,14 @@ https://github.com/adafruit/Adafruit_NeoPixel
 
 The file "melty.h" contains various configuration options. These are as follows:
 
-SPEED_LO: Low speed mode duty cycle (/255). Lower spin speeds offer higher translation speeds at the expense of kinetic energy.
-SPEED_HI: High speed mode duty cycle.
-ACCEL_DIST: Accelerometer distance from centre of rotation in millimetres.
-HEADING_ANGLE: Number of degrees to display the heading LED for.
-LED_BRIGHTNESS: LED duty cycle (/255). Turn down to avoid burning out heading LEDs when run without a resistor.
-VBATT_R1: High side divider resistance in ohms
-VBATT_R2: Low side resistance in ohms
-LOW_BATT_MVOLTS: Low battery value in millivolts. Usually 3V/cell for lipo batteries.
+* SPEED_LO: Low speed mode duty cycle (/255). Lower spin speeds offer higher translation speeds at the expense of kinetic energy.
+* SPEED_HI: High speed mode duty cycle.
+* ACCEL_DIST: Accelerometer distance from centre of rotation in millimetres.
+* HEADING_ANGLE: Number of degrees to display the heading LED for.
+* LED_BRIGHTNESS: LED duty cycle (/255). Turn down to avoid burning out heading LEDs when run without a resistor.
+* VBATT_R1: High side divider resistance in ohms
+* VBATT_R2: Low side resistance in ohms
+* LOW_BATT_MVOLTS: Low battery value in millivolts. Usually 3V/cell for lipo batteries.
 
 Additionally, pin assignments can be set here.
 
